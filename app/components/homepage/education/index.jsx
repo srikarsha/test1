@@ -68,6 +68,18 @@ function Education() {
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
                         </div>
+                        <div>
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                            {education.title}
+                          </p>
+                          <p className="text-sm sm:text-base">{education.institution}</p>
+                            {education.cgpa && (
+                          <p className="text-sm sm:text-base">CGPA: {education.cgpa}</p>
+                          )}
+                            {education.percentage && (
+                          <p className="text-sm sm:text-base">Percentage: {education.percentage}%</p>
+                           )}
+                        </div>
                       </div>
                     </div>
                   </GlowCard>
